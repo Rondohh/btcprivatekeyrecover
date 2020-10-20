@@ -21,6 +21,7 @@ Install [NodeJs](https://nodejs.org) LTS version.
 4º - Open Power Shell/CMD if you are on windows or terminal if you are on Linux/MAC.
 
 5º - Paste the path you copied at step 3 with the command `cd`. Example:
+
 `cd C:\Users\user\Downloads\btcprivatekeyrecover-master`
 
 6º - Run the command `npm install` to install the dependencies.
