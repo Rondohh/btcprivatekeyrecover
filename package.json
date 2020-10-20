@@ -1,0 +1,30 @@
+{
+  "name": "btcprivatekeyrecover",
+  "version": "1.0.0",
+  "description": "Bitcoin private key recover lost characters",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "private",
+    "key",
+    "recovery"
+  ],
+  "author": "thewinter",
+  "license": "MIT",
+  "dependencies": {
+    "bs58": "4.0.1",
+    "got": "^11.7.0"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.8.8",
+    "@types/node": "^10.10.3",
+    "cross-env": "^5.1.3",
+    "jest": "^23.6.0",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^23.10.1",
+    "typescript": "^3.0.3"
+  }
+}
