@@ -7,7 +7,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question(`Inser your private key.\nIn the characters missing replace with '*' or '?': ` , (answer) => {
+rl.question(`Insert your private key.\nIn the characters missing replace with '*' or '?': ` , (answer) => {
 
   recover(answer);
 

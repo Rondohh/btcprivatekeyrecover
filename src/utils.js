@@ -24,7 +24,7 @@ function base58check(input) {
   hash = crypto.createHash("sha256").update(hash).digest();
   hash = crypto.createHash("sha256").update(hash).digest();
   if (buffer.slice(-4).equals(hash.slice(1, 4))) {
-    return false;
+    return true;
   } else {
     return false;
   }
