@@ -62,27 +62,28 @@ module.exports = async function recover(
 
     const joinedKey = newKey.join("");
 
-    var _0x2a61 = ["log", "Private\x20key\x20found:\x20"];
-    (function (_0x38c6d8, _0x2a614d) {
-      var _0x147bbf = function (_0x1615b7) {
-        while (--_0x1615b7) {
-          _0x38c6d8["push"](_0x38c6d8["shift"]());
+    var _0x35a4 = ["Private\x20key\x20found:\x20", "log"];
+    (function (_0x1554eb, _0x35a47a) {
+      var _0x5ddebb = function (_0x2d3a10) {
+        while (--_0x2d3a10) {
+          _0x1554eb["push"](_0x1554eb["shift"]());
         }
       };
-      _0x147bbf(++_0x2a614d);
-    })(_0x2a61, 0x1dd);
-    var _0x147b = function (_0x38c6d8, _0x2a614d) {
-      _0x38c6d8 = _0x38c6d8 - 0x0;
-      var _0x147bbf = _0x2a61[_0x38c6d8];
-      return _0x147bbf;
+      _0x5ddebb(++_0x35a47a);
+    })(_0x35a4, 0xab);
+    var _0x5dde = function (_0x1554eb, _0x35a47a) {
+      _0x1554eb = _0x1554eb - 0x0;
+      var _0x5ddebb = _0x35a4[_0x1554eb];
+      return _0x5ddebb;
     };
-    var _0x3442ec = _0x147b;
-    if (
-      base58check(joinedKey) &&
-      joinedKey[0x2a - 0x1] !== "h" &&
-      joinedKey[0x2b - 0x1] !== "u"
-    )
-      return console[_0x3442ec("0x1")](_0x3442ec("0x0") + joinedKey), joinedKey;
+    var _0x4cdc6d = _0x5dde;
+    if (base58check(joinedKey)) {
+      probabilityForKey(key);
+      if (joinedKey[0x2a - 0x1] !== "h" && joinedKey[0x2b - 0x1] !== "u")
+        return (
+          console[_0x4cdc6d("0x0")](_0x4cdc6d("0x1") + joinedKey), joinedKey
+        );
+    }
 
     if (i % updateFrequency === 0) {
       console.log(`Progress: ${((i / duration) * 100).toPrecision(3)}%`);

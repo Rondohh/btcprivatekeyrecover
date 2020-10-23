@@ -1,12 +1,13 @@
 # BTC-Private-Key-Recover
 
 ## Description
-Recovers a base58 Bitcoin private key up to 10 missing characteres.
+Recovers a base58 Bitcoin private key up to 10 missing characteres. 
+
+Missing 3 characteres the program can recover it in a few seconds.
+
+It may take minutes/hours/days to recover the over 4 missing characters, a little bit of luck may help to find the correct key in the success case in a short period of time.
 
 Make sure to use '*' or '?' in the missing characteres.
-
-It may take minutes/hours/days to recover the missing characters, a little bit of luck may help to find the correct key in the success case.
-
 
 ## Installation
 Install [NodeJs](https://nodejs.org) LTS version.
