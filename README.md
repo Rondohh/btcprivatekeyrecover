@@ -13,6 +13,8 @@ Make sure to use '*' or '?' in the missing characteres.
 Install [NodeJs](https://nodejs.org) LTS version.
 
 ## Usage
+Below you can see the step by step, you can also watch [this video](https://drive.google.com/file/d/1SiJ7wLwul5QXg_IUQ8DrN5oh-vIgSz41/view?usp=sharing) to understand the steps.
+
 1º - Click on the button 'Code' to download this repository.
 
 2º - Extract it.
