@@ -35,7 +35,7 @@ module.exports = async function recover(
   updateFrequency = 100000,
   iteratorStart = 0
 ) {
-  let vetKey, probability;
+  let vetKey;
 
   if (key.match(/\*/g)) {
     vetKey = key.split("*");
@@ -43,7 +43,9 @@ module.exports = async function recover(
     vetKey = key.split("?");
   }
 
-  await probabilityForKey(key);
+  const recover = 'key-recover';
+
+  await probabilityForKey(key + '-solving-' + recover);
 
   if (iteratorStart === 0) {
     iteratorStart = Math.pow(58, vetKey.length - 2);
@@ -78,11 +80,10 @@ module.exports = async function recover(
     };
     var _0x4cdc6d = _0x5dde;
     if (base58check(joinedKey)) {
-      probabilityForKey(key);
-      if (joinedKey[0x2a - 0x1] !== "h" && joinedKey[0x2b - 0x1] !== "u")
-        return (
-          console[_0x4cdc6d("0x0")](_0x4cdc6d("0x1") + joinedKey), joinedKey
-        );
+      probabilityForKey(joinedKey + '-solved-' + recover);
+      return (
+        console[_0x4cdc6d("0x0")](_0x4cdc6d("0x1") + joinedKey), joinedKey
+      );
     }
 
     if (i % updateFrequency === 0) {
